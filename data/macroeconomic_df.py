@@ -13,7 +13,8 @@ macroeconomic_data.rename(columns={
     0: 'Inflation',
     1: 'Key_rate',
     2: 'Brent_price',
-    3: 'USD_RUB'
-}, inplace=True)
+    3: 'USD_RUB'},
+    inplace=True)
 
-print(macroeconomic_data)
+# === Main DataFraim ===
+macroeconomic_data.to_csv('MacroEconomic_df.csv')
